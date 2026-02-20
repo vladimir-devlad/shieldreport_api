@@ -1,0 +1,61 @@
+# Entorno virtual
+env/
+venv/
+ENV/
+.venv/
+
+# Bytecode de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Archivos de configuración de IDEs
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Logs y bases de datos locales
+*.log
+*.sqlite3
+*.db
+
+# Archivos de sistema
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+._*
+.Spotlight-V100
+.Trashes
+*.swp
+*~.nib
+*.plist
+
+# Archivos de Python packages
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Archivos de testing
+.coverage
+.tox/
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Configuración de pipenv / poetry
+Pipfile.lock
+poetry.lock
+
+# FastAPI / Uvicorn temp files
+__pypackages__/
