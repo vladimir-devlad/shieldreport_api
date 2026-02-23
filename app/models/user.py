@@ -22,3 +22,16 @@ class User(Base):
     role = relationship("Role", back_populates="users")
     sessions = relationship("UserSession", back_populates="user")
     audit_logs = relationship("AuditLog", back_populates="user")
+
+    # relaciones nuevas
+    supervised_users = relationship(
+        "UserSupervisor",
+        foreign_keys="UserSupervisor.supervisor_id",
+        back_populates="supervisor",
+    )
+    supervisors = relationship(
+        "UserSupervisor", foreign_keys="UserSupervisor.user_id", back_populates="user"
+    )
+
+    # razones sociales asignadas
+    razon_sociales = relationship("UserRazonSocial", back_populates="user")

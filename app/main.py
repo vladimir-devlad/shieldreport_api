@@ -8,49 +8,57 @@ from passlib.context import CryptContext
 
 from app.database import SessionLocal
 from app.models import Role, User
-from app.routers import auth, roles, users
+from app.routers import auth, razon_social, reportes, roles, supervisor, users
 
-load_dotenv()  # ← primero siempre
+load_dotenv()
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
-def create_default_admin():
+def create_default_superadmin():
     db = SessionLocal()
     try:
-        admin_role = db.query(Role).filter(Role.name == "admin").first()
+        # crea roles si no existen
+        roles_data = [
+            {"name": "superadmin", "description": "Control total del sistema"},
+            {"name": "admin", "description": "Gestión de supervisores y usuarios"},
+            {"name": "supervisor", "description": "Gestión de su grupo de usuarios"},
+            {"name": "usuario", "description": "Acceso estándar"},
+        ]
+        for r in roles_data:
+            existing = db.query(Role).filter(Role.name == r["name"]).first()
+            if not existing:
+                db.add(Role(name=r["name"], description=r["description"]))
+        db.commit()
+        print("✅ Roles verificados correctamente")
 
-        if not admin_role:
-            roles = [
-                Role(name="admin", description="Acceso total al sistema"),
-                Role(name="supervisor", description="Puede gestionar reportes"),
-                Role(name="usuario", description="Acceso estándar"),
-            ]
-            db.add_all(roles)
-            db.commit()
-            db.refresh(roles[0])
-            admin_role = roles[0]
-            print("✅ Roles creados correctamente")
+        # busca rol superadmin
+        superadmin_role = db.query(Role).filter(Role.name == "superadmin").first()
 
-        existing_admin = db.query(User).filter(User.role_id == admin_role.id).first()
+        # verifica si ya existe un superadmin
+        existing_superadmin = (
+            db.query(User).filter(User.role_id == superadmin_role.id).first()
+        )
 
-        if not existing_admin:
-            default_admin = User(
-                name=os.getenv("DEFAULT_ADMIN_NAME"),
-                last_name=os.getenv("DEFAULT_ADMIN_LASTNAME"),
-                username=os.getenv("DEFAULT_ADMIN_USERNAME"),
-                password=pwd_context.hash(os.getenv("DEFAULT_ADMIN_PASSWORD")),
+        if not existing_superadmin:
+            default_superadmin = User(
+                name=os.getenv("DEFAULT_SUPERADMIN_NAME"),
+                last_name=os.getenv("DEFAULT_SUPERADMIN_LASTNAME"),
+                username=os.getenv("DEFAULT_SUPERADMIN_USERNAME"),
+                password=pwd_context.hash(os.getenv("DEFAULT_SUPERADMIN_PASSWORD")),
                 is_active=True,
-                role_id=admin_role.id,
+                role_id=superadmin_role.id,
             )
-            db.add(default_admin)
+            db.add(default_superadmin)
             db.commit()
-            print(f"✅ Admin creado → usuario: {os.getenv('DEFAULT_ADMIN_USERNAME')}")
+            print(
+                f"✅ Superadmin creado → usuario: {os.getenv('DEFAULT_SUPERADMIN_USERNAME')}"
+            )
         else:
-            print("ℹ️  Admin ya existe, no se crea uno nuevo")
+            print("ℹ️  Superadmin ya existe, no se crea uno nuevo")
 
     except Exception as e:
-        print(f"❌ Error al crear admin por defecto: {e}")
+        print(f"❌ Error al crear superadmin por defecto: {e}")
         db.rollback()
     finally:
         db.close()
@@ -58,10 +66,10 @@ def create_default_admin():
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
-    print("Iniciando servidor SOC API...")
-    create_default_admin()
+    print("🚀 Iniciando servidor SOC API...")
+    create_default_superadmin()
     yield
-    print("Servidor apagado")
+    print("🛑 Servidor apagado")
 
 
 app = FastAPI(
@@ -70,7 +78,6 @@ app = FastAPI(
     version="1.0.0",
     lifespan=lifespan,
 )
-
 # ─── CORS
 app.add_middleware(
     CORSMiddleware,
@@ -79,12 +86,14 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-app.include_router(auth.router)  # ← después de crear app
+app.include_router(auth.router)
 app.include_router(users.router)
 app.include_router(roles.router)
+app.include_router(razon_social.router)
+app.include_router(supervisor.router)
+app.include_router(reportes.router)
 
 
 @app.get("/")
 def root():
-    return {"message": "SOC Management API funcionando", "version": "1.0.0"}
+    return {"message": "SOC Management API funcionando ✅", "version": "1.0.0"}
