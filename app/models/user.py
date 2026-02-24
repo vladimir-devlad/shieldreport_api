@@ -10,7 +10,9 @@ class User(Base):
 
     id = Column(Integer, primary_key=True, index=True)
     name = Column(String(100), nullable=False)
+    middle_name = Column(String(100), nullable=True)
     last_name = Column(String(100), nullable=False)
+    second_last_name = Column(String(100), nullable=True)
     username = Column(String(50), nullable=False, unique=True)
     password = Column(String(255), nullable=False)
     is_active = Column(Boolean, default=True)
@@ -24,6 +26,9 @@ class User(Base):
     audit_logs = relationship("AuditLog", back_populates="user")
 
     # relaciones nuevas
+    emails = relationship("UserEmail", back_populates="user", cascade="all, delete")
+    phones = relationship("UserPhone", back_populates="user", cascade="all, delete")
+
     supervised_users = relationship(
         "UserSupervisor",
         foreign_keys="UserSupervisor.supervisor_id",
