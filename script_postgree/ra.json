@@ -1,0 +1,2067 @@
+[
+ {
+  "id": 5,
+  "name": "GRUPO GONPER SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-20 20:36:56.071848"
+ },
+ {
+  "id": 6,
+  "name": "CALDERON ABANTO CINTHIAN JANET",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:40:40.71008"
+ },
+ {
+  "id": 7,
+  "name": "GRUPO LLECLLISH EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:40:43.445247"
+ },
+ {
+  "id": 9,
+  "name": "TERRAS CORPORATION GROUP INVESTMENS S.C.R.L.",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:40:47.822567"
+ },
+ {
+  "id": 10,
+  "name": "CORPORACION PAUCAR PERU SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:40:48.267002"
+ },
+ {
+  "id": 11,
+  "name": "AKEMITEL EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:40:49.320339"
+ },
+ {
+  "id": 12,
+  "name": "NANO SANCHEZ JACKELINE PAOLA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:40:50.361893"
+ },
+ {
+  "id": 14,
+  "name": "SERVICIOS GENERALES BURGA MARTOS SRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.715312"
+ },
+ {
+  "id": 18,
+  "name": "DICALL TELECOMUNICACIONES SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.790461"
+ },
+ {
+  "id": 21,
+  "name": "CHANG CORPORATION SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.794978"
+ },
+ {
+  "id": 20,
+  "name": "CONECTSOLUTIONS EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.794675"
+ },
+ {
+  "id": 23,
+  "name": "CELL SHOP COMUNICATION EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.805181"
+ },
+ {
+  "id": 24,
+  "name": "H & G SOLUCIONES DE NEGOCIOS SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.806753"
+ },
+ {
+  "id": 25,
+  "name": "BLACK MODEM EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.81104"
+ },
+ {
+  "id": 26,
+  "name": "PARTNER SERVICE  SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.816733"
+ },
+ {
+  "id": 27,
+  "name": "BELICOSO CARRILLO JORGE LUIS",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.817362"
+ },
+ {
+  "id": 28,
+  "name": "MULTISERVICIOS MOVILES AYACUCHO EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.821647"
+ },
+ {
+  "id": 29,
+  "name": "SANTY DISTRIBUCIONES SCRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.829092"
+ },
+ {
+  "id": 30,
+  "name": "TELECOMUNICACIONES MI CALL EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.833121"
+ },
+ {
+  "id": 31,
+  "name": "CAV CENTRO CIVICO",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.841134"
+ },
+ {
+  "id": 32,
+  "name": "NETCONTACT SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.868699"
+ },
+ {
+  "id": 35,
+  "name": "CONEXIT TELECOMUNICACIONES SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.923143"
+ },
+ {
+  "id": 33,
+  "name": "GLOBAL NEGOCIOS PERU SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.921921"
+ },
+ {
+  "id": 34,
+  "name": "CALL PERU SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.922401"
+ },
+ {
+  "id": 36,
+  "name": "COMUNIK2 PERU SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.934952"
+ },
+ {
+  "id": 37,
+  "name": "CENCOSUD RETAIL PERU SA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.935249"
+ },
+ {
+  "id": 39,
+  "name": "CAVE SANTA ANITA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.945508"
+ },
+ {
+  "id": 40,
+  "name": "GRUPO BITATEL PERU SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.945791"
+ },
+ {
+  "id": 41,
+  "name": "TELECYRA SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.947982"
+ },
+ {
+  "id": 19,
+  "name": "ACHATA COMUNICACIONES EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.947078"
+ },
+ {
+  "id": 17,
+  "name": "EDUARDO FLORES LIDIA YESENIA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.946462"
+ },
+ {
+  "id": 42,
+  "name": "ATIENDE BUSINESS PERU EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.959452"
+ },
+ {
+  "id": 43,
+  "name": "CELL SERVICE EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.961313"
+ },
+ {
+  "id": 44,
+  "name": "OPENTEL SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.96384"
+ },
+ {
+  "id": 46,
+  "name": "IMPORTACIONES SPORT DIMA EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.97758"
+ },
+ {
+  "id": 47,
+  "name": "VENTAS TELL PERU SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.981187"
+ },
+ {
+  "id": 45,
+  "name": "H Y T GLOBAL NETWORKS SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.978519"
+ },
+ {
+  "id": 49,
+  "name": "SERVICIOS GENERALES CARDEY EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.982528"
+ },
+ {
+  "id": 50,
+  "name": "KAIROS DIGITAL MULTISERVICE EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.983897"
+ },
+ {
+  "id": 55,
+  "name": "CAV SAN ANDRES CUSCO",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.000719"
+ },
+ {
+  "id": 53,
+  "name": "TELEATENTO DEL PERU SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.001013"
+ },
+ {
+  "id": 51,
+  "name": "DIGITAL CONNECT SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.999896"
+ },
+ {
+  "id": 52,
+  "name": "BLACK SALES SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.000192"
+ },
+ {
+  "id": 56,
+  "name": "CAV TARAPOTO",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.000449"
+ },
+ {
+  "id": 58,
+  "name": "ECOTRON SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.019456"
+ },
+ {
+  "id": 61,
+  "name": "CAMILA LIZETH CALLA PAUCARA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.018944"
+ },
+ {
+  "id": 60,
+  "name": "CONSULTORIA EMPRESARIAL PALACIOS TORRES & ASOCIADOS SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.020199"
+ },
+ {
+  "id": 65,
+  "name": "TELEATENTO DEL PER\u00da SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.037705"
+ },
+ {
+  "id": 66,
+  "name": "KONTACTANOS BPO EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.039124"
+ },
+ {
+  "id": 63,
+  "name": "CAV TUMBES",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.036997"
+ },
+ {
+  "id": 64,
+  "name": "MENDOZA CADILLO RUBEN ALBERTO",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.037445"
+ },
+ {
+  "id": 67,
+  "name": "CAV TACNA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.040452"
+ },
+ {
+  "id": 62,
+  "name": "LUCAS & M DISTRIBUIDORES EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.038415"
+ },
+ {
+  "id": 68,
+  "name": "ENDUTECH EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.057656"
+ },
+ {
+  "id": 69,
+  "name": "DEMF SOLUTIONS EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.058564"
+ },
+ {
+  "id": 70,
+  "name": "NC MOVILES SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.057321"
+ },
+ {
+  "id": 71,
+  "name": "TIENDAS POR DEPARTAMENTO RIPLEY SA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.059825"
+ },
+ {
+  "id": 72,
+  "name": "PATRICK CORPORATION & SERVICIOS GENERALES SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.057963"
+ },
+ {
+  "id": 73,
+  "name": "YUPANQUI REYES RAUL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.060573"
+ },
+ {
+  "id": 74,
+  "name": "INVERSOL RECARGA SELVA EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.075706"
+ },
+ {
+  "id": 75,
+  "name": "COMPANY D&C DIGITAL GROUP SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.077636"
+ },
+ {
+  "id": 77,
+  "name": "COMUNICACIONES AVRIL EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.080479"
+ },
+ {
+  "id": 76,
+  "name": "ATENCIO ANGELES RAMIRO",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.082299"
+ },
+ {
+  "id": 78,
+  "name": "PUBLIPHONE SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.08074"
+ },
+ {
+  "id": 80,
+  "name": "GLOBAL CONNECT EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.094624"
+ },
+ {
+  "id": 81,
+  "name": "MUNDO CELL SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.098638"
+ },
+ {
+  "id": 82,
+  "name": "KONECTA BTO, SL SUCURSAL EN PERU",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.102406"
+ },
+ {
+  "id": 85,
+  "name": "LIONEXT COMPANY EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.10307"
+ },
+ {
+  "id": 83,
+  "name": "CAV CHICLAYO 1",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.101613"
+ },
+ {
+  "id": 84,
+  "name": "R & T MOVILES EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.104568"
+ },
+ {
+  "id": 87,
+  "name": "BETZATEL SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.116012"
+ },
+ {
+  "id": 86,
+  "name": "CAV AREQUIPA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.115098"
+ },
+ {
+  "id": 90,
+  "name": "RC SOLUCIONES MOVILES EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.125482"
+ },
+ {
+  "id": 89,
+  "name": "A2B TELECOMUNICACIONES PERU SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.124609"
+ },
+ {
+  "id": 91,
+  "name": "SOLDECOM INTEGRAL EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.1278"
+ },
+ {
+  "id": 88,
+  "name": "TIPTEL SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.124106"
+ },
+ {
+  "id": 92,
+  "name": "CAV MALL DEL SUR",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.133728"
+ },
+ {
+  "id": 93,
+  "name": "ASOCIADOS JC MOVIL EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.136043"
+ },
+ {
+  "id": 95,
+  "name": "SERVICELL TUMBES EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.14728"
+ },
+ {
+  "id": 94,
+  "name": "TELECOMUNICACIONES GYS EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.145662"
+ },
+ {
+  "id": 96,
+  "name": "TELECOM TECONTACTO BPO SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.150386"
+ },
+ {
+  "id": 97,
+  "name": "FORMATEL INNOVA SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.150106"
+ },
+ {
+  "id": 98,
+  "name": "CAV HUANUCO",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.154065"
+ },
+ {
+  "id": 99,
+  "name": "IJK MOBILE NETWORK SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.153702"
+ },
+ {
+  "id": 100,
+  "name": "GEMINIS TELECOMUNICACIONES EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.166095"
+ },
+ {
+  "id": 101,
+  "name": "AMG ENGINEERS SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.166345"
+ },
+ {
+  "id": 102,
+  "name": "HALO + SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.168567"
+ },
+ {
+  "id": 103,
+  "name": "CAVE SANTA CLARA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.172328"
+ },
+ {
+  "id": 104,
+  "name": "MULTISERVICIOS GRANDEZ CORPEIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.178116"
+ },
+ {
+  "id": 105,
+  "name": "E&S MOVILES CENTRAL EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.178377"
+ },
+ {
+  "id": 107,
+  "name": "CAV SALAVERRY",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.186993"
+ },
+ {
+  "id": 106,
+  "name": "MACRO TELCOM EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.188161"
+ },
+ {
+  "id": 111,
+  "name": "CAVE AYACUCHO",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.198728"
+ },
+ {
+  "id": 110,
+  "name": "CAVE PLAZA NORTE",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.196995"
+ },
+ {
+  "id": 113,
+  "name": "ESCAPE SOLUTION SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.209836"
+ },
+ {
+  "id": 112,
+  "name": "SYPTELCORP SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.21013"
+ },
+ {
+  "id": 114,
+  "name": "CORPORACION E INVERSIONES ATEL EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.212475"
+ },
+ {
+  "id": 115,
+  "name": "CAV JOCKEY OLO",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.214985"
+ },
+ {
+  "id": 116,
+  "name": "NIBEP SOLUCIONES SERVICIOS GENERALES SRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.218361"
+ },
+ {
+  "id": 117,
+  "name": "HUAYTELCOMS SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.223579"
+ },
+ {
+  "id": 118,
+  "name": "EMPRESA DB TELE COMUNICACIONES POLITA TEC SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.228622"
+ },
+ {
+  "id": 13,
+  "name": "LUATEL SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-23 12:43:11.257642"
+ },
+ {
+  "id": 79,
+  "name": "DELIMA NORTE COMUNICACIONES SAC",
+  "is_active": true,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-23 17:03:15.9815"
+ },
+ {
+  "id": 22,
+  "name": "SMARTPHONE PERU SAC",
+  "is_active": true,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-23 17:04:30.159159"
+ },
+ {
+  "id": 120,
+  "name": "INGENIERIA COMERCIO Y SERVICIO NOROESTE EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.234937"
+ },
+ {
+  "id": 121,
+  "name": "ECOMDATA PERU SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.236937"
+ },
+ {
+  "id": 122,
+  "name": "CHAVEZ PORTAL MICHEL LEONEL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.238275"
+ },
+ {
+  "id": 123,
+  "name": "GONZALES GALLO MARIA LUCIA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.243886"
+ },
+ {
+  "id": 124,
+  "name": "JAVIER CASTILLO HOYOS",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.246444"
+ },
+ {
+  "id": 127,
+  "name": "CORPORACION CRXVII SRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.257454"
+ },
+ {
+  "id": 125,
+  "name": "BPO CONSULTING SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.257801"
+ },
+ {
+  "id": 126,
+  "name": "APTELCONET EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.259162"
+ },
+ {
+  "id": 128,
+  "name": "GRUPOWAYO SRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.258941"
+ },
+ {
+  "id": 130,
+  "name": "CAV LA MOLINA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.266552"
+ },
+ {
+  "id": 129,
+  "name": "BRANDT TELECOM EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.264109"
+ },
+ {
+  "id": 131,
+  "name": "A & J CONEXION EMPRESARIAL EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.276825"
+ },
+ {
+  "id": 132,
+  "name": "CAV PUNO",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.276535"
+ },
+ {
+  "id": 134,
+  "name": "VOZ-X GROUP SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.280172"
+ },
+ {
+  "id": 133,
+  "name": "JM PROYECTOS COMERCIALES EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.27868"
+ },
+ {
+  "id": 136,
+  "name": "M & A COMUNICACIONES EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.285735"
+ },
+ {
+  "id": 135,
+  "name": "BUSINESS LM GROUP SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.285453"
+ },
+ {
+  "id": 139,
+  "name": "MACREN CONSULTORES SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.300457"
+ },
+ {
+  "id": 138,
+  "name": "GRUPO ZAORSA EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.298756"
+ },
+ {
+  "id": 140,
+  "name": "CAV LARCO",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.302349"
+ },
+ {
+  "id": 141,
+  "name": "CONECTA RETAIL SA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.305439"
+ },
+ {
+  "id": 142,
+  "name": "SELVA TELECOMUNICACIONES PERU SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.307218"
+ },
+ {
+  "id": 143,
+  "name": "PERU PHONE SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.319499"
+ },
+ {
+  "id": 144,
+  "name": "INKA CELL SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.321166"
+ },
+ {
+  "id": 145,
+  "name": "MOBILES ONLINE SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.32144"
+ },
+ {
+  "id": 146,
+  "name": "OVERALL STRATEGY SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.32573"
+ },
+ {
+  "id": 148,
+  "name": "CAV AVIACION",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.327026"
+ },
+ {
+  "id": 147,
+  "name": "TELSUR SERVICIOS GENERALES SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.329077"
+ },
+ {
+  "id": 149,
+  "name": "TELECONTACTO PERU SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.339235"
+ },
+ {
+  "id": 151,
+  "name": "J&B SMART SERVICES EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.341887"
+ },
+ {
+  "id": 152,
+  "name": "RED SUR PLUS Y COMUNICACIONES EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.34301"
+ },
+ {
+  "id": 154,
+  "name": "IN CONNECT SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.349109"
+ },
+ {
+  "id": 153,
+  "name": "GRUPO KAIROS L & M EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.349514"
+ },
+ {
+  "id": 156,
+  "name": "DI ANGHELO FERNANDO ALVAREZ VILLACORTA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.361755"
+ },
+ {
+  "id": 157,
+  "name": "HITSS PERU SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.362723"
+ },
+ {
+  "id": 155,
+  "name": "ATALAYA IDROGO WERNER HELI DE LOS ANGELES",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.361354"
+ },
+ {
+  "id": 158,
+  "name": "G2B TELECOMUNICACIONES  EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.362973"
+ },
+ {
+  "id": 160,
+  "name": "JB TECHNOLOGY SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.370811"
+ },
+ {
+  "id": 159,
+  "name": "ANCOMA CONTAC CENTER SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.369865"
+ },
+ {
+  "id": 163,
+  "name": "VE CONNECT SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.383053"
+ },
+ {
+  "id": 162,
+  "name": "MIRABAL QUISPE HEYERBE ANGEL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.384855"
+ },
+ {
+  "id": 161,
+  "name": "CREE Y V SOLUCIONES SRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.382276"
+ },
+ {
+  "id": 164,
+  "name": "TELENORTE SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.385803"
+ },
+ {
+  "id": 166,
+  "name": "OFIC.PRINCIP- B",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.390161"
+ },
+ {
+  "id": 165,
+  "name": "NEXT MOBILE SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.389638"
+ },
+ {
+  "id": 167,
+  "name": "CORPORACION IWASI SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.404453"
+ },
+ {
+  "id": 168,
+  "name": "A & R SMARTTEC EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.404738"
+ },
+ {
+  "id": 171,
+  "name": "MAUTINO CRUZ GLADYS IMELDA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.408764"
+ },
+ {
+  "id": 172,
+  "name": "MOVILANDIA SRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.410724"
+ },
+ {
+  "id": 173,
+  "name": "DOBLE S COMUNICACIONES SRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.421297"
+ },
+ {
+  "id": 170,
+  "name": "COMUNICACIONES SUR PERUANA EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.419472"
+ },
+ {
+  "id": 175,
+  "name": "ANDEAN TECHNOLOGY SCRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.427671"
+ },
+ {
+  "id": 176,
+  "name": "MR TELECOMUNICACIONES E INVERSIONES EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.429537"
+ },
+ {
+  "id": 177,
+  "name": "FADOLI EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.42983"
+ },
+ {
+  "id": 179,
+  "name": "WAYRATEC LINK SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.441495"
+ },
+ {
+  "id": 178,
+  "name": "WITLINK SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.441409"
+ },
+ {
+  "id": 180,
+  "name": "JOVARS GROUP SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.445073"
+ },
+ {
+  "id": 181,
+  "name": "INFOCENTRO SRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.446749"
+ },
+ {
+  "id": 182,
+  "name": "JARD DIGITAL SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.451526"
+ },
+ {
+  "id": 183,
+  "name": "COBERTURA TOTAL EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.451784"
+ },
+ {
+  "id": 184,
+  "name": "MCORTEZ SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.460607"
+ },
+ {
+  "id": 185,
+  "name": "VENTELCOM SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.463136"
+ },
+ {
+  "id": 186,
+  "name": "ADECCO SALES & MARKETING SA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.468465"
+ },
+ {
+  "id": 187,
+  "name": "SOLUCIONES Y PROYECTOS DE TELECOMUNICACIONES CORPORATIVOS SAC - SYPTELCORP SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.469873"
+ },
+ {
+  "id": 189,
+  "name": "LA ESPERANZA EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.472381"
+ },
+ {
+  "id": 188,
+  "name": "CAV MINKA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.471807"
+ },
+ {
+  "id": 191,
+  "name": "INTEGRA RETAIL SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.482089"
+ },
+ {
+  "id": 190,
+  "name": "INVERSIONES SOLANO EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.483275"
+ },
+ {
+  "id": 192,
+  "name": "GALVEZ ALCANTARA CLAUDIA LISSETH",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.489524"
+ },
+ {
+  "id": 194,
+  "name": "TELECOMUNICACIONES DIMA SRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.490725"
+ },
+ {
+  "id": 195,
+  "name": "MAHADI SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.493113"
+ },
+ {
+  "id": 196,
+  "name": "RED CLARO PHONECENTER SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.501886"
+ },
+ {
+  "id": 197,
+  "name": "GALICIA J&S EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.502809"
+ },
+ {
+  "id": 199,
+  "name": "MEZA LOPEZ FRANCO IVO",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.510609"
+ },
+ {
+  "id": 198,
+  "name": "COMUNICACIONES N & J EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.511111"
+ },
+ {
+  "id": 201,
+  "name": "V&V TELESERVICIOS EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.513871"
+ },
+ {
+  "id": 200,
+  "name": "HENDABER TELECOMUNICACIONES SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.515212"
+ },
+ {
+  "id": 202,
+  "name": "TELGIMEC SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.527471"
+ },
+ {
+  "id": 203,
+  "name": "COMUNICACIONES RIVERAS SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.52817"
+ },
+ {
+  "id": 205,
+  "name": "INNOVA VISION R&D SERVICIOS GENERALES SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.53141"
+ },
+ {
+  "id": 204,
+  "name": "IA CONEXIONES EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.529779"
+ },
+ {
+  "id": 206,
+  "name": "NEMO CONTACT CENTER EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.533375"
+ },
+ {
+  "id": 207,
+  "name": "CAV TRUJILLO 3",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.539519"
+ },
+ {
+  "id": 208,
+  "name": "LOPAN SERVICIOS GENERALES SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.547441"
+ },
+ {
+  "id": 210,
+  "name": "ADECCO CONSULTING SA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.549364"
+ },
+ {
+  "id": 209,
+  "name": "NIKLU EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.549094"
+ },
+ {
+  "id": 211,
+  "name": "JC PRINCIPE EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.553314"
+ },
+ {
+  "id": 212,
+  "name": "MADITEL GROUP EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.558258"
+ },
+ {
+  "id": 213,
+  "name": "2R TELESERVICIOS CONTACT CENTER EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.559493"
+ },
+ {
+  "id": 214,
+  "name": "VECTOR SOFTWARE FACTORY PERU SUCURSAL DE PERU",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.569672"
+ },
+ {
+  "id": 1,
+  "name": "DAJOTEL SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-20 20:36:42.728721"
+ },
+ {
+  "id": 8,
+  "name": "TELECOMMUNICATIONS AND NETWORKS SOLUTION SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:40:46.736709"
+ },
+ {
+  "id": 16,
+  "name": "AMERICAN COMMUNICATION SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.716148"
+ },
+ {
+  "id": 38,
+  "name": "INVERSIONES TELEMI SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.936145"
+ },
+ {
+  "id": 15,
+  "name": "YAABURNEE EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.946586"
+ },
+ {
+  "id": 48,
+  "name": "ASCHERI SALDA\u00d1A FIORELLI",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:25.981658"
+ },
+ {
+  "id": 54,
+  "name": "BIZ CONNECT SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.012276"
+ },
+ {
+  "id": 59,
+  "name": "CAV CHICLAYO 3",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.019194"
+ },
+ {
+  "id": 57,
+  "name": "GCR COMUNICACIONES SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.018519"
+ },
+ {
+  "id": 109,
+  "name": "VERKOOP SOLUCIONES Y SERVICIOS GENERALES SRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.191835"
+ },
+ {
+  "id": 108,
+  "name": "TRADE SOLUTIONS RM SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.191271"
+ },
+ {
+  "id": 119,
+  "name": "CYACOM EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.234201"
+ },
+ {
+  "id": 137,
+  "name": "TIENDAS PERUANAS SA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.298268"
+ },
+ {
+  "id": 150,
+  "name": "SELVATEC NISSI SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.341788"
+ },
+ {
+  "id": 174,
+  "name": "ESPINOZA SALCEDO RAFAEL GERARDO",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.421025"
+ },
+ {
+  "id": 193,
+  "name": "MDY INTERNATIONAL BUSINESS PROCESS OUTSOURCING SAC - MDY INT-BPO SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.490438"
+ },
+ {
+  "id": 215,
+  "name": "VISA NET EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.570615"
+ },
+ {
+  "id": 217,
+  "name": "LEON DE LA CRUZ FELIPE ALFREDO",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.574695"
+ },
+ {
+  "id": 218,
+  "name": "CAV PUCALLPA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.576548"
+ },
+ {
+  "id": 216,
+  "name": "TIENDA VIRTUAL POSTPAGO",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.574721"
+ },
+ {
+  "id": 219,
+  "name": "CAV ILO",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.581447"
+ },
+ {
+  "id": 220,
+  "name": "ELIAS VASQUEZ YEISON RILDO",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.587889"
+ },
+ {
+  "id": 221,
+  "name": "ANTRAX TELCOM SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.590571"
+ },
+ {
+  "id": 222,
+  "name": "PARE CUCHULA MERIDA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.595576"
+ },
+ {
+  "id": 223,
+  "name": "JAMAPUC DISTRIBUCIONES EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.595322"
+ },
+ {
+  "id": 224,
+  "name": "SYSCOM MOVILES EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.598049"
+ },
+ {
+  "id": 225,
+  "name": "ATLANTIC COMMUNICATIONS SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.60042"
+ },
+ {
+  "id": 226,
+  "name": "PC TELECOM SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.609859"
+ },
+ {
+  "id": 227,
+  "name": "CAV SALAVERR OLO",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.612242"
+ },
+ {
+  "id": 228,
+  "name": "CAVE PORONGOCHE 2",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.613609"
+ },
+ {
+  "id": 229,
+  "name": "BPO PERU SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.616801"
+ },
+ {
+  "id": 230,
+  "name": "MARTIN ACOSTA ELMO",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.617742"
+ },
+ {
+  "id": 231,
+  "name": "TELSUR COMUNICACIONES SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.622978"
+ },
+ {
+  "id": 232,
+  "name": "CORPORACION LYA SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.630751"
+ },
+ {
+  "id": 233,
+  "name": "INVERSIONES LAS PALMAS J&E EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.633456"
+ },
+ {
+  "id": 234,
+  "name": "TVO TELECOM SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.635852"
+ },
+ {
+  "id": 236,
+  "name": "REDES INTELIGENTES PERU EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.639548"
+ },
+ {
+  "id": 235,
+  "name": "ODJ TELECOMUNICACIONES SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.639197"
+ },
+ {
+  "id": 237,
+  "name": "RED 5G ATALAYA SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.642103"
+ },
+ {
+  "id": 238,
+  "name": "CAVE JULIACA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.655025"
+ },
+ {
+  "id": 240,
+  "name": "BUSINESS MASTER LOZAMORA SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.659062"
+ },
+ {
+  "id": 241,
+  "name": "CAV SAN MIGUEL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.66106"
+ },
+ {
+  "id": 242,
+  "name": "PONCE GALAN MARELMITH MARGARITA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.660689"
+ },
+ {
+  "id": 239,
+  "name": "BRACAR EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.657718"
+ },
+ {
+  "id": 243,
+  "name": "SERVICIO DE TELECOMUNICACIONES MEGA CONNECTION SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.660289"
+ },
+ {
+  "id": 244,
+  "name": "COMVERZA EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.674531"
+ },
+ {
+  "id": 248,
+  "name": "CONEXCEL SUR SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.681311"
+ },
+ {
+  "id": 249,
+  "name": "CYCTEL SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.681622"
+ },
+ {
+  "id": 247,
+  "name": "CAVE CAJAMARCA 1",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.682258"
+ },
+ {
+  "id": 246,
+  "name": "GRUPO ESPECIALIZADO DE ASISTENCIA DEL PERU",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.681967"
+ },
+ {
+  "id": 250,
+  "name": "CAV CHORRILLOS",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.689243"
+ },
+ {
+  "id": 245,
+  "name": "DACOMPANY SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.685079"
+ },
+ {
+  "id": 253,
+  "name": "AFERVITEL EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.698814"
+ },
+ {
+  "id": 251,
+  "name": "TIENDAS DEL MEJORAMIENTO DEL HOGAR SA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.698755"
+ },
+ {
+  "id": 252,
+  "name": "CONTACTA BUSINESS PROCESS OUTSOURCING SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.698715"
+ },
+ {
+  "id": 254,
+  "name": "SMART CENTER JOCKEY PLAZA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.704077"
+ },
+ {
+  "id": 255,
+  "name": "REDCOTEA SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.711789"
+ },
+ {
+  "id": 256,
+  "name": "EVERSIM TECHNOLOGY JM EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.715783"
+ },
+ {
+  "id": 258,
+  "name": "CAV JOCKEY PLAZA CF",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.720696"
+ },
+ {
+  "id": 259,
+  "name": "KONECTAR BPO SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.721269"
+ },
+ {
+  "id": 260,
+  "name": "ENFOCADO SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.724552"
+ },
+ {
+  "id": 257,
+  "name": "INVERSIONES ENOR SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.72223"
+ },
+ {
+  "id": 261,
+  "name": "SAGA FALABELLA SA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.730249"
+ },
+ {
+  "id": 262,
+  "name": "DGC COMUNICACIONES SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.735576"
+ },
+ {
+  "id": 263,
+  "name": "CAVE TRUJILLO 1",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.743189"
+ },
+ {
+  "id": 266,
+  "name": "NIZA REGION SUR SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.743812"
+ },
+ {
+  "id": 264,
+  "name": "UMI CELL PHONE EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.742644"
+ },
+ {
+  "id": 265,
+  "name": "DELMOR SERVICE EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.74289"
+ },
+ {
+  "id": 267,
+  "name": "ESTILOS",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.752843"
+ },
+ {
+  "id": 268,
+  "name": "DIMAJO INVERSIONES EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.759682"
+ },
+ {
+  "id": 269,
+  "name": "CAV CUSCO REAL PLAZA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.763444"
+ },
+ {
+  "id": 270,
+  "name": "SPSA*",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.765079"
+ },
+ {
+  "id": 271,
+  "name": "GRUPO MARYEN SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.767262"
+ },
+ {
+  "id": 273,
+  "name": "TELETALK SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.771623"
+ },
+ {
+  "id": 272,
+  "name": "COMPA\u00d1IA FOOD RETAIL SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.770977"
+ },
+ {
+  "id": 274,
+  "name": "A & G INGENIERIA EN GAS NATURAL SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.780072"
+ },
+ {
+  "id": 276,
+  "name": "SOLUCIONES Y SERVICIOS MULTIPLES PERU SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.783436"
+ },
+ {
+  "id": 275,
+  "name": "CAV PORONGOCHE",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.784519"
+ },
+ {
+  "id": 277,
+  "name": "SERVICIOS SAVAL SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.785717"
+ },
+ {
+  "id": 279,
+  "name": "CAV SJL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.791432"
+ },
+ {
+  "id": 278,
+  "name": "TELCON MACHUCA EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.790243"
+ },
+ {
+  "id": 280,
+  "name": "IMPACTO MOVIL GLOBAL SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.799319"
+ },
+ {
+  "id": 281,
+  "name": "CONEXION RAPIDA SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.803025"
+ },
+ {
+  "id": 283,
+  "name": "BECONNECTED.COM SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.803654"
+ },
+ {
+  "id": 282,
+  "name": "MOVIL NET COMUNICACIONES EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.802766"
+ },
+ {
+  "id": 284,
+  "name": "SERVICIOS GENERALES GAMA PERU EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.806965"
+ },
+ {
+  "id": 285,
+  "name": "INVERSIONES BRICE\u00d1O EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.812302"
+ },
+ {
+  "id": 286,
+  "name": "GRUPO DOMINIO SRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.817016"
+ },
+ {
+  "id": 287,
+  "name": "GARCIA ROMERO JAIR",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.81992"
+ },
+ {
+  "id": 289,
+  "name": "E & Z MOVILSS SRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.822546"
+ },
+ {
+  "id": 288,
+  "name": "CORPORATION GINERAD SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.822289"
+ },
+ {
+  "id": 290,
+  "name": "CORPORACION KIMLUHA SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.824312"
+ },
+ {
+  "id": 291,
+  "name": "CORPORACION JICAMA EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.832684"
+ },
+ {
+  "id": 292,
+  "name": "CALDERON BUSINESS EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.835426"
+ },
+ {
+  "id": 293,
+  "name": "CONTACTATE EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.837586"
+ },
+ {
+  "id": 294,
+  "name": "CREDISHOP SOCIEDAD ANONIMA CERRADA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.840546"
+ },
+ {
+  "id": 295,
+  "name": "AEMI GROUP EIRL",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-21 13:46:26.842777"
+ },
+ {
+  "id": 2,
+  "name": "EXPONENTE DIGITAL PE SAC",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-23 12:43:11.216167"
+ },
+ {
+  "id": 3,
+  "name": "HIPERMERCADOS TOTTUS SA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-23 17:02:48.778432"
+ },
+ {
+  "id": 4,
+  "name": "CAV JULIACA REAL PLAZA",
+  "is_active": false,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-23 17:02:48.776583"
+ },
+ {
+  "id": 169,
+  "name": "BLAZEL A&M VENTAS TECNOLOGICAS SAC",
+  "is_active": true,
+  "created_at": "2026-02-20 11:03:01.692998",
+  "updated_at": "2026-02-23 17:04:38.553322"
+ }
+]

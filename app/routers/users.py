@@ -1,6 +1,6 @@
-from typing import List
+from typing import List, Optional
 
-from fastapi import APIRouter, Depends, Request
+from fastapi import APIRouter, Depends, Query, Request
 from pydantic import BaseModel
 from sqlalchemy.orm import Session
 
@@ -38,14 +38,16 @@ def my_profile(
     return user_service.get_my_profile(db, current_user)
 
 
-@router.get("/sin-supervisor", response_model=List[UserDetailResponse])
+@router.get("/sin-supervisor")
 def users_sin_supervisor(
+    search: Optional[str] = Query(None, description="Buscar por nombre o username"),
+    page: int = Query(1, ge=1),
+    limit: int = Query(20, ge=1, le=100),
     db: Session = Depends(get_db),
     current_user: User = Depends(require_admin_or_supervisor),
 ):
-    """Lista usuarios sin supervisor asignado"""
-    users = user_service.get_users_sin_supervisor(db)
-    return [user_service._build_user_detail(u, db) for u in users]
+    """Lista usuarios sin supervisor — paginado con búsqueda"""
+    return user_service.get_users_sin_supervisor(db, current_user, search, page, limit)
 
 
 @router.get("/{user_id}", response_model=UserDetailResponse)
