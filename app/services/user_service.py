@@ -1,3 +1,5 @@
+import re
+
 from fastapi import HTTPException
 from passlib.context import CryptContext
 from sqlalchemy.orm import Session
@@ -27,9 +29,11 @@ def _log(db, user_id, action, record_id, old=None, new=None, ip=None):
 
 
 def _build_user_detail(user: User, db: Session) -> dict:
+    from app.models.user_email import UserEmail
+    from app.models.user_phone import UserPhone
+
     role_data = {"id": user.role.id, "name": user.role.name}
 
-    # supervisor al que pertenece
     supervisor_data = None
     supervisor_relation = (
         db.query(UserSupervisor).filter(UserSupervisor.user_id == user.id).first()
@@ -46,7 +50,6 @@ def _build_user_detail(user: User, db: Session) -> dict:
                 "username": sup.username,
             }
 
-    # usuarios que supervisa
     supervised = []
     if user.role.name == "supervisor":
         relations = (
@@ -57,7 +60,6 @@ def _build_user_detail(user: User, db: Session) -> dict:
         for r in relations:
             u = db.query(User).filter(User.id == r.user_id).first()
             if u:
-                # razones sociales del usuario supervisado
                 rs_relations = (
                     db.query(UserRazonSocial)
                     .filter(UserRazonSocial.user_id == u.id)
@@ -84,7 +86,6 @@ def _build_user_detail(user: User, db: Session) -> dict:
                     }
                 )
 
-    # razones sociales del usuario
     razon_relations = (
         db.query(UserRazonSocial).filter(UserRazonSocial.user_id == user.id).all()
     )
@@ -94,10 +95,20 @@ def _build_user_detail(user: User, db: Session) -> dict:
         if rs:
             razon_sociales.append({"id": rs.id, "name": rs.name})
 
+    # emails del usuario
+    emails = db.query(UserEmail).filter(UserEmail.user_id == user.id).all()
+    emails_list = [{"email": e.email} for e in emails]
+
+    # teléfonos del usuario
+    phones = db.query(UserPhone).filter(UserPhone.user_id == user.id).all()
+    phones_list = [{"phone_number": p.phone_number} for p in phones]
+
     return {
         "id": user.id,
         "name": user.name,
+        "middle_name": user.middle_name,
         "last_name": user.last_name,
+        "second_last_name": user.second_last_name,
         "username": user.username,
         "is_active": user.is_active,
         "role_id": user.role_id,
@@ -107,6 +118,8 @@ def _build_user_detail(user: User, db: Session) -> dict:
         "supervisor": supervisor_data,
         "supervised_users": supervised,
         "razon_sociales": razon_sociales,
+        "emails": emails_list,
+        "phones": phones_list,
     }
 
 
@@ -221,10 +234,38 @@ def get_users_sin_supervisor(
     }
 
 
+def _generate_username(name: str, last_name: str, db: Session) -> str:
+    """
+    Genera username automático: name.last_name
+    Si existe agrega número consecutivo: name.last_name2, name.last_name3...
+    Limpia caracteres especiales y espacios.
+    """
+    import unicodedata
+
+    def clean(text: str) -> str:
+        # elimina tildes y caracteres especiales
+        text = unicodedata.normalize("NFKD", text)
+        text = "".join(c for c in text if not unicodedata.combining(c))
+        # solo letras y números en minúsculas
+        return re.sub(r"[^a-z0-9]", "", text.lower().strip())
+
+    base = f"{clean(name)}.{clean(last_name)}"
+    username = base
+    counter = 2
+
+    while db.query(User).filter(User.username == username).first():
+        username = f"{base}{counter}"
+        counter += 1
+
+    return username
+
+
 def create_user(data: UserCreate, db: Session, current_user: User, ip: str = None):
-    existing = db.query(User).filter(User.username == data.username).first()
-    if existing:
-        raise HTTPException(status_code=400, detail="El username ya está en uso")
+    from app.models.user_email import UserEmail
+    from app.models.user_phone import UserPhone
+
+    # genera username automáticamente
+    username = _generate_username(data.name, data.last_name, db)
 
     role = db.query(Role).filter(Role.id == data.role_id).first()
     if not role:
@@ -234,23 +275,18 @@ def create_user(data: UserCreate, db: Session, current_user: User, ip: str = Non
 
     # reglas de creación por rol
     if current_user.role.name == "superadmin":
-        # superadmin puede crear cualquier rol
         pass
-
     elif current_user.role.name == "admin":
-        # admin solo puede crear supervisor y usuario
         if role.name in ["superadmin", "admin"]:
             raise HTTPException(
                 status_code=403,
                 detail="El admin solo puede crear supervisores y usuarios",
             )
-
     else:
         raise HTTPException(
             status_code=403, detail="No tienes permisos para crear usuarios"
         )
 
-    # si se envía supervisor_id validar que exista y sea supervisor
     if data.supervisor_id:
         supervisor = db.query(User).filter(User.id == data.supervisor_id).first()
         if not supervisor:
@@ -261,10 +297,20 @@ def create_user(data: UserCreate, db: Session, current_user: User, ip: str = Non
                 detail=f"'{supervisor.username}' no tiene rol de supervisor",
             )
 
+    # valida emails únicos
+    for email in data.emails or []:
+        existing_email = db.query(UserEmail).filter(UserEmail.email == email).first()
+        if existing_email:
+            raise HTTPException(
+                status_code=400, detail=f"El email '{email}' ya está registrado"
+            )
+
     new_user = User(
         name=data.name,
+        middle_name=data.middle_name,
         last_name=data.last_name,
-        username=data.username,
+        second_last_name=data.second_last_name,
+        username=username,
         password=pwd_context.hash(data.password),
         role_id=data.role_id,
         is_active=True,
@@ -273,12 +319,24 @@ def create_user(data: UserCreate, db: Session, current_user: User, ip: str = Non
     db.commit()
     db.refresh(new_user)
 
-    # vincula supervisor si se envió
+    # guarda emails
+    for email in data.emails or []:
+        db.add(UserEmail(user_id=new_user.id, email=email))
+
+    # valida y guarda teléfonos
+    for phone in data.phones or []:
+        if not re.match(r"^\+?[1-9]\d{6,14}$", phone.replace(" ", "").replace("-", "")):
+            raise HTTPException(
+                status_code=400,
+                detail=f"Formato de teléfono inválido: {phone}. Ejemplo: +51987654321",
+            )
+        db.add(UserPhone(user_id=new_user.id, phone_number=phone))
+
+    # vincula supervisor
     if data.supervisor_id:
         db.add(UserSupervisor(supervisor_id=data.supervisor_id, user_id=new_user.id))
 
-    # asigna razones sociales si se enviaron
-    # admin solo puede asignar RS activas
+    # asigna razones sociales
     for rs_id in data.razon_social_ids or []:
         rs = db.query(RazonSocial).filter(RazonSocial.id == rs_id).first()
         if not rs:
@@ -302,39 +360,38 @@ def create_user(data: UserCreate, db: Session, current_user: User, ip: str = Non
             "username": new_user.username,
             "role_id": new_user.role_id,
             "supervisor_id": data.supervisor_id,
-            "razon_social_ids": data.razon_social_ids,
         },
         ip=ip,
     )
     db.commit()
+
     return _build_user_detail(new_user, db)
 
 
 def update_user(
     user_id: int, data: UserUpdate, db: Session, current_user: User, ip: str = None
 ):
+    from app.models.user_email import UserEmail
+    from app.models.user_phone import UserPhone
+
     user = db.query(User).filter(User.id == user_id).first()
     if not user:
         raise HTTPException(status_code=404, detail="Usuario no encontrado")
 
-    # validación de cambio de contraseña por rol
+    # validación cambio de contraseña por rol
     if data.password is not None:
         if current_user.role.name == "admin":
-            # admin no puede cambiar contraseña de superadmin
             if user.role.name == "superadmin":
                 raise HTTPException(
                     status_code=403,
                     detail="No puedes cambiar la contraseña de un superadmin",
                 )
-
         elif current_user.role.name == "supervisor":
-            # supervisor solo puede cambiar la de sus usuarios
             if user.role.name in ["superadmin", "admin"]:
                 raise HTTPException(
                     status_code=403,
                     detail="No puedes cambiar la contraseña de un admin o superadmin",
                 )
-            # verifica que el usuario sea de su grupo
             relation = (
                 db.query(UserSupervisor)
                 .filter(
@@ -349,7 +406,6 @@ def update_user(
                     detail="Solo puedes cambiar la contraseña de tus propios usuarios",
                 )
 
-    # resto de validaciones existentes...
     old_data = {
         "name": user.name,
         "last_name": user.last_name,
@@ -372,8 +428,12 @@ def update_user(
 
     if data.name is not None:
         user.name = data.name
+    if data.middle_name is not None:
+        user.middle_name = data.middle_name
     if data.last_name is not None:
         user.last_name = data.last_name
+    if data.second_last_name is not None:
+        user.second_last_name = data.second_last_name
     if data.username is not None:
         user.username = data.username
     if data.role_id is not None:
@@ -383,19 +443,48 @@ def update_user(
     if data.password is not None:
         user.password = pwd_context.hash(data.password)
 
+    # actualiza emails — reemplaza todos
+    if data.emails is not None:
+        db.query(UserEmail).filter(UserEmail.user_id == user_id).delete()
+        for email in data.emails:
+            existing_email = (
+                db.query(UserEmail)
+                .filter(UserEmail.email == email, UserEmail.user_id != user_id)
+                .first()
+            )
+            if existing_email:
+                raise HTTPException(
+                    status_code=400,
+                    detail=f"El email '{email}' ya está registrado por otro usuario",
+                )
+            db.add(UserEmail(user_id=user_id, email=email))
+
+    # actualiza teléfonos — reemplaza todos
+    if data.phones is not None:
+        db.query(UserPhone).filter(UserPhone.user_id == user_id).delete()
+        for phone in data.phones:
+            if not re.match(
+                r"^\+?[1-9]\d{6,14}$", phone.replace(" ", "").replace("-", "")
+            ):
+                raise HTTPException(
+                    status_code=400, detail=f"Formato de teléfono inválido: {phone}"
+                )
+            db.add(UserPhone(user_id=user_id, phone_number=phone))
+
     db.commit()
     db.refresh(user)
 
-    new_data = {
-        "name": user.name,
-        "last_name": user.last_name,
-        "username": user.username,
-        "role_id": user.role_id,
-        "is_active": user.is_active,
-    }
-
-    _log(db, current_user.id, "UPDATE_USER", user.id, old=old_data, new=new_data, ip=ip)
+    _log(
+        db,
+        current_user.id,
+        "UPDATE_USER",
+        user.id,
+        old=old_data,
+        new={"name": user.name, "last_name": user.last_name},
+        ip=ip,
+    )
     db.commit()
+
     return _build_user_detail(user, db)
 
 
