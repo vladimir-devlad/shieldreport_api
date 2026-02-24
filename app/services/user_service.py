@@ -176,29 +176,49 @@ def get_my_profile(db: Session, current_user: User):
     return _build_user_detail(current_user, db)
 
 
-def get_users_sin_supervisor(db: Session):
+def get_users_sin_supervisor(
+    db: Session, current_user: User, search: str = None, page: int = 1, limit: int = 20
+):
     """
     Lista usuarios con rol 'usuario' que no tienen supervisor asignado.
-    Disponible para admin y supervisor.
+    Disponible para admin y supervisor. Con paginación y búsqueda.
     """
+    import math
+
     rol_usuario = db.query(Role).filter(Role.name == "usuario").first()
     if not rol_usuario:
-        return []
+        return {"total": 0, "page": page, "limit": limit, "pages": 0, "data": []}
 
     # todos los user_id que ya tienen supervisor
     asignados = db.query(UserSupervisor.user_id).all()
     asignados_ids = [r.user_id for r in asignados]
 
-    # usuarios sin supervisor
-    return (
-        db.query(User)
-        .filter(
-            User.role_id == rol_usuario.id,
-            User.is_active == True,
-            ~User.id.in_(asignados_ids),
-        )
-        .all()
+    query = db.query(User).filter(
+        User.role_id == rol_usuario.id,
+        User.is_active == True,
+        ~User.id.in_(asignados_ids),
     )
+
+    # búsqueda opcional
+    if search:
+        query = query.filter(
+            User.username.ilike(f"%{search}%")
+            | User.name.ilike(f"%{search}%")
+            | User.last_name.ilike(f"%{search}%")
+        )
+
+    total = query.count()
+    pages = math.ceil(total / limit) if total > 0 else 0
+    offset = (page - 1) * limit
+    users = query.offset(offset).limit(limit).all()
+
+    return {
+        "total": total,
+        "page": page,
+        "limit": limit,
+        "pages": pages,
+        "data": [_build_user_detail(u, db) for u in users],
+    }
 
 
 def create_user(data: UserCreate, db: Session, current_user: User, ip: str = None):
