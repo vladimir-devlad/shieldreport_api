@@ -37,14 +37,19 @@ def agregar_usuario(
             status_code=400, detail="Solo se pueden agregar usuarios con rol 'usuario'"
         )
 
-    # verifica que no tenga supervisor ya
+    # verifica que no esté ya en este supervisor específico
     existing = (
-        db.query(UserSupervisor).filter(UserSupervisor.user_id == user_id).first()
+        db.query(UserSupervisor)
+        .filter(
+            UserSupervisor.supervisor_id == supervisor_id,
+            UserSupervisor.user_id == user_id,
+        )
+        .first()
     )
     if existing:
         raise HTTPException(
             status_code=400,
-            detail=f"El usuario '{user.username}' ya tiene un supervisor asignado",
+            detail=f"El usuario '{user.username}' ya está en este grupo",
         )
 
     # si es supervisor, solo puede agregarse usuarios a sí mismo

@@ -26,6 +26,7 @@ __pycache__/
 *.log
 *.sqlite3
 *.db
+logs/
 
 # Archivos de sistema
 .DS_Store
@@ -66,3 +67,6 @@ poetry.lock
 
 # FastAPI / Uvicorn temp files
 __pypackages__/
+
+# Carpetas personales
+Vladimir/

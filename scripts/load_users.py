@@ -1,6 +1,8 @@
 import os
 import re
 import sys
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 import unicodedata
 from datetime import datetime
 
@@ -17,7 +19,6 @@ from app.models.user_phone import UserPhone
 from app.models.user_razon_social import UserRazonSocial
 from app.models.user_supervisor import UserSupervisor
 
-sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 load_dotenv()
 
 
@@ -78,7 +79,7 @@ def get_razon_sociales(row, db) -> list:
     for col in cols:
         if col not in row.index:
             continue
-        name = safe_str(row.get(col))
+        name = safe_str(row.get(col)).upper().strip()
         if not name:
             continue
         rs = (
@@ -140,7 +141,7 @@ def process_razon_social(df, db, errors: list):
     for index, row in df.iterrows():
         fila = index + 2
         try:
-            name = to_title_case(safe_str(row.get("Name")))
+            name = safe_str(row.get("Name")).upper().strip()
             if not name:
                 raise ValueError("Name es obligatorio")
 
@@ -217,12 +218,19 @@ def process_sheet(df, role_name: str, db, errors: list):
 
             email_1 = safe_str(row.get("Email1")) or None
             email_2 = safe_str(row.get("Email2")) or None
-            emails = [e for e in [email_1, email_2] if e]
+            email_3 = safe_str(row.get("Email3")) or None
+            emails = [e for e in [email_1, email_2, email_3] if e]
 
+            emails_validos = []
             for email in emails:
                 existing = db.query(UserEmail).filter(UserEmail.email == email).first()
                 if existing:
-                    raise ValueError(f"Email '{email}' ya está registrado")
+                    raise ValueError(
+                        f"Email '{email}' ya registrado, se omite para este usuario"
+                    )
+                else:
+                    emails_validos.append(email)
+            emails = emails_validos
 
             phone = safe_str(row.get("Phone")) or None
             if phone and not validate_phone(phone):
@@ -241,7 +249,7 @@ def process_sheet(df, role_name: str, db, errors: list):
 
             # crea usuario
             new_user = User(
-                Name=Name,
+                name=Name,
                 middle_name=middle_name,
                 last_name=last_name,
                 second_last_name=second_last_name,

@@ -78,7 +78,7 @@ class UserCreate(BaseModel):
     second_last_name: Optional[str] = None
     password: Optional[str] = None
     role_id: int
-    supervisor_id: Optional[int] = None
+    supervisor_ids: Optional[List[int]] = []
     razon_social_ids: Optional[List[int]] = []
     emails: Optional[List[EmailStr]] = []
     phones: Optional[List[str]] = []
@@ -93,6 +93,7 @@ class UserUpdate(BaseModel):
     password: Optional[str] = None
     role_id: Optional[int] = None
     is_active: Optional[bool] = None
+    supervisor_ids: Optional[List[int]] = None
     emails: Optional[List[EmailStr]] = None
     phones: Optional[List[str]] = None
 
@@ -125,7 +126,7 @@ class UserDetailResponse(BaseModel):
     created_at: datetime
     updated_at: datetime
     role: RoleSimple
-    supervisor: Optional[SupervisorSimple] = None
+    supervisores: Optional[List[SupervisorSimple]] = []
     supervised_users: Optional[List[UserSimple]] = []
     razon_sociales: Optional[List[RazonSocialSimple]] = []
     emails: Optional[List[EmailItem]] = []
