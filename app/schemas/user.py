@@ -76,7 +76,7 @@ class UserCreate(BaseModel):
     middle_name: Optional[str] = None
     last_name: str
     second_last_name: Optional[str] = None
-    password: str
+    password: Optional[str] = None
     role_id: int
     supervisor_id: Optional[int] = None
     razon_social_ids: Optional[List[int]] = []

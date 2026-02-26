@@ -1,5 +1,7 @@
+import os
 import re
 
+from dotenv import load_dotenv
 from fastapi import HTTPException
 from passlib.context import CryptContext
 from sqlalchemy.orm import Session
@@ -12,6 +14,7 @@ from app.models.user_razon_social import UserRazonSocial
 from app.models.user_supervisor import UserSupervisor
 from app.schemas.user import UserCreate, UserUpdate
 
+load_dotenv()
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 
 
@@ -305,13 +308,20 @@ def create_user(data: UserCreate, db: Session, current_user: User, ip: str = Non
                 status_code=400, detail=f"El email '{email}' ya está registrado"
             )
 
+    # contraseña: usa la enviada o la por defecto
+    password_to_use = (
+        data.password
+        if data.password
+        else os.getenv("DEFAULT_USER_PASSWORD", "Claro2026$")
+    )
+
     new_user = User(
         name=data.name,
         middle_name=data.middle_name,
         last_name=data.last_name,
         second_last_name=data.second_last_name,
         username=username,
-        password=pwd_context.hash(data.password),
+        password=pwd_context.hash(password_to_use),
         role_id=data.role_id,
         is_active=True,
     )
@@ -359,7 +369,7 @@ def create_user(data: UserCreate, db: Session, current_user: User, ip: str = Non
         new={
             "username": new_user.username,
             "role_id": new_user.role_id,
-            "supervisor_id": data.supervisor_id,
+            "used_default_password": data.password is None,
         },
         ip=ip,
     )

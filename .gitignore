@@ -6,6 +6,11 @@ ENV/
 .venv/
 .env-api/
 
+# Variables de entorno
+.env
+.env.*
+!.env.example
+
 # Bytecode de Python
 __pycache__/
 *.py[cod]
