@@ -107,5 +107,5 @@ def root():
     return {
         "message": "SOC Management API funcionando",
         "version": "1.0.0",
-        "env": os.getenv("APP_ENV", "development"),
+        "env": os.getenv("APP_ENV", "unknown"),
     }
