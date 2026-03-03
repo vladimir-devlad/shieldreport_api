@@ -23,7 +23,7 @@ load_dotenv()
 
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
-DEFAULT_PASSWORD = os.getenv("DEFAULT_USER_PASSWORD", "Welcome123!")
+DEFAULT_PASSWORD = os.getenv("DEFAULT_USER_PASSWORD", "Claro2026$")
 
 
 # ─────────────────────────────────────────

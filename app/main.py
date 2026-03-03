@@ -8,7 +8,7 @@ from passlib.context import CryptContext
 
 from app.database import SessionLocal
 from app.models import Role, User
-from app.routers import auth, razon_social, reportes, roles, supervisor, users
+from app.routers import auth, razon_social, reportes, roles, supervisor, sync, users
 
 load_dotenv()
 
@@ -100,6 +100,7 @@ app.include_router(roles.router)
 app.include_router(razon_social.router)
 app.include_router(supervisor.router)
 app.include_router(reportes.router)
+app.include_router(sync.router)
 
 
 @app.get("/")
